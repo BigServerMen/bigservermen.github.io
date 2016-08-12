@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+	border: 0 none;
+	padding: 0;
+}
+
+video#bgvid {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: url(404.png) no-repeat;
+	background-size: cover;
+}
+
+@media screen and (max-device-width: 800px) {
+	body {
+		background: url(404.png) #000 no-repeat center center fixed;
+	}
+
+	#bgvid {
+		display: none;
+	}
+}
